@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.110.151.50:3306/chunyin?useSSL=false
+    username: root
+    password: root
+    # Hikari 数据源专用配置
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+  # JPA 相关配置
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+
+  freemarker:
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    template-loader-path: classpath:/templates
+  servlet:
+    multipart:
+      max-file-size: 10MB
+chunyin:
+  appId: wx8bd37a1a3e554bc3
+  secret: 03efe4ec978a326afe298cb18fdba1e6
+  basicPath: C:\Users\Administrator\Desktop\photo\
+
+
+server:
+  ssl:
+    key-store: classpath:keystore.p12
+    key-store-type: PKCS12
+    key-alias: tomcat
+    key-store-password: 123456
+    enabled: true
+  port: 443
