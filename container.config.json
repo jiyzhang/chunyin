@@ -1,0 +1,14 @@
+{
+  "containerPort": 8080,
+  "minNum": 0,
+  "maxNum": 50,
+  "cpu": 1,
+  "mem": 1,
+  "policyType": "cpu",
+  "policyThreshold": 60,
+  "envParams": {},
+  "customLogs": "stdout",
+  "dataBaseName":"chunyin",
+  "executeSQLs":[
+    "CREATE DATABASE IF NOT EXISTS chunyin;"  ]
+}
