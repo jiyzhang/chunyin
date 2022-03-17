@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_ADDRESS}/${MYSQL_DATABASE:chunyin}
-    username: ${MYSQL_USERNAME}
-    password: ${MYSQL_PASSWORD}
+    url: jdbc:mysql://10.0.224.9:3306/chunyin?useSSL=false
+    username: cyadmin
+    password: Apple321!
     # Hikari 数据源专用配置
     hikari:
       maximum-pool-size: 20
